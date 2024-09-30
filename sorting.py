@@ -19,3 +19,5 @@ def selection(lst):
 
 
 #insertion(list) > sorted list
+def insertion(lst):
+    return "HI MOM!!!"
