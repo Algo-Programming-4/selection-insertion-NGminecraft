@@ -3,7 +3,7 @@ def bubble(lst):
     for i in range(len(lst)-1):
         for i, v in enumerate(lst[0:-1]):
             if v > lst[i+1]:
-                lst[i], lst[i+1]= lst[i+1], v
+                lst[i], lst[i+1]= lst[i+1], lst[i]
     return lst
 
 
