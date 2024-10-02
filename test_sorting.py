@@ -3,7 +3,7 @@ import random
 import unittest
 
 
-nums = [random.randint(1, 100) for _ in range(random.randint(1, 5))]
+nums = [random.randint(1, 100) for _ in range(random.randint(1, 100))]
 sorted_nums = sorted(nums)
 
 class test_sorting(unittest.TestCase):

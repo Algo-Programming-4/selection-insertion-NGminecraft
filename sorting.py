@@ -19,5 +19,11 @@ def selection(lst):
 
 
 #insertion(list) > sorted list
-def insertion(lst):
-    return "HI MOM!!!"
+def insertion(lst:list):   
+    for main_index, main_value in enumerate(lst[1:]):
+        index = 0
+        while main_value > lst[index]:
+            index+=1
+        popped = lst.pop(main_index+1)
+        lst.insert(index, popped)
+    return lst
